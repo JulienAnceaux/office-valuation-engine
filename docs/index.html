@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Office Valuation Engine — Démo interactive</title>
+<style>
+  :root {
+    --accent: #107C10;
+    --bg: #f5f6f7;
+    --card: #ffffff;
+    --text: #1b1b1b;
+    --muted: #605e5c;
+    --border: #e1e1e1;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  header {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 24px 16px;
+  }
+  header h1 { font-size: 1.6rem; margin-bottom: 4px; }
+  header p { color: var(--muted); margin-top: 0; }
+  nav a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px 60px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 20px;
+  }
+  .embed-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 62%;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #eee;
+  }
+  .embed-wrap iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border: none;
+  }
+  .fallback {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--muted);
+  }
+  footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px 40px;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  code {
+    background: #eee;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Office Valuation Engine</h1>
+  <p>Moteur de valorisation DCF pour actifs de bureaux — Power BI / DAX, sliders interactifs.</p>
+  <nav><a href="../README.md">← Retour au repo</a></nav>
+</header>
+
+<main>
+  <div class="card">
+    <div class="embed-wrap">
+      <!--
+        ÉTAPE À FAIRE UNE FOIS "PUBLISH TO WEB" RÉALISÉ DANS POWER BI :
+        Remplacer le src ci-dessous par l'URL fournie par Power BI
+        (Fichier > Publier > Publier sur le web > copier le lien d'intégration iframe).
+        Rappel : cette action rend les données du rapport publiques et indexables.
+        Ne jamais publier ce rapport si un jeu de données réel y a été réimporté.
+      -->
+      <iframe
+        title="Office Valuation Engine — démo live"
+        src="REMPLACER_PAR_URL_PUBLISH_TO_WEB"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="fallback">
+      Si l'embed ne s'affiche pas encore, la démo live n'a pas été publiée — voir les
+      <a href="../screenshots/dashboard-v2.jpg">captures statiques</a> dans le repo en attendant.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 style="font-size:1.1rem;">Données affichées</h2>
+    <p>Jeu de données entièrement fictif ("Immeuble de bureaux fictif — Île-de-France"). Aucune donnée client ou de mandat réel.</p>
+  </div>
+</main>
+
+<footer>
+  Julien Anceaux Colombani — <a href="https://github.com/JulienAnceaux">github.com/JulienAnceaux</a>
+</footer>
+
+</body>
+</html>

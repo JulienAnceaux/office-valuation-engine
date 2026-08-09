@@ -1,0 +1,10 @@
+# Fichiers Power BI / Excel sources — non versionnés (utiliser Power BI Online pour la démo live)
+*.pbix
+*.pbit
+*.xlsx
+*.xlsm
+~$*
+
+# Système
+.DS_Store
+Thumbs.db
