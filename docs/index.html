@@ -44,24 +44,24 @@
     padding: 16px;
     margin-top: 20px;
   }
-  .embed-wrap {
-    position: relative;
+  .gallery img {
     width: 100%;
-    padding-top: 62%;
     border-radius: 6px;
-    overflow: hidden;
-    background: #eee;
+    display: block;
+    margin-top: 12px;
+    border: 1px solid var(--border);
   }
-  .embed-wrap iframe {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    border: none;
+  .demo-request {
+    background: #f0f6ff;
+    border: 1px solid #cfe0f7;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
   }
-  .fallback {
-    text-align: center;
-    padding: 60px 20px;
-    color: var(--muted);
+  .demo-request a {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
   }
   footer {
     max-width: 1100px;
@@ -87,23 +87,15 @@
 
 <main>
   <div class="card">
-    <div class="embed-wrap">
-      <!--
-        ÉTAPE À FAIRE UNE FOIS "PUBLISH TO WEB" RÉALISÉ DANS POWER BI :
-        Remplacer le src ci-dessous par l'URL fournie par Power BI
-        (Fichier > Publier > Publier sur le web > copier le lien d'intégration iframe).
-        Rappel : cette action rend les données du rapport publiques et indexables.
-        Ne jamais publier ce rapport si un jeu de données réel y a été réimporté.
-      -->
-      <iframe
-        title="Office Valuation Engine — démo live"
-        src="REMPLACER_PAR_URL_PUBLISH_TO_WEB"
-        allowfullscreen>
-      </iframe>
+    <h2 style="font-size:1.1rem;margin-top:0;">Aperçu du tableau de bord</h2>
+    <div class="gallery">
+      <img src="../screenshots/dashboard-v2.jpg" alt="Tableau de bord — KPI VAN, TRI, Valeur vénale, VAN cumulée">
+      <img src="../screenshots/detail-cashflow-v1.jpg" alt="Détail du cash-flow année par année">
     </div>
-    <div class="fallback">
-      Si l'embed ne s'affiche pas encore, la démo live n'a pas été publiée — voir les
-      <a href="../screenshots/dashboard-v2.jpg">captures statiques</a> dans le repo en attendant.
+    <div class="demo-request">
+      Le rapport est pilotable en direct (sliders ILAT, taux d'actualisation, vacance, etc.).
+      Une démo interactive est disponible sur demande —
+      <a href="mailto:julienanceaux@gmail.com?subject=Démo%20Office%20Valuation%20Engine">écrivez-moi</a>.
     </div>
   </div>
 
