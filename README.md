@@ -22,7 +22,7 @@ Matrice ligne par ligne, année par année : loyer brut → vacance → loyer ne
 
 ## Démo interactive
 
-Le rapport est pilotable en direct (sliders ILAT, taux d'actualisation, vacance, frais de sortie/acquisition...). Voir les captures ci-dessus, ou [la page dédiée](docs/index.html) — une démo interactive est disponible sur demande.
+[Ouvrir le rapport Power BI en direct](https://app.powerbi.com/view?r=eyJrIjoiYzhlYzQxMzAtOWZkMS00MmRlLTkxYWItNzJhZTRlZTUwOGJiIiwidCI6ImQwNzYyZjgyLWU0MWQtNGZjOC1iZWFjLTBmYzYxMzY4NjE5NSJ9) — tous les sliders sont pilotables en direct (ILAT, taux d'actualisation, vacance, frais de sortie/acquisition...), aucune connexion requise.
 
 ## Architecture du modèle
 
